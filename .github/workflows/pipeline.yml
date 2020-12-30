@@ -40,3 +40,4 @@ jobs:
           healthcheck: 'https://pokedex-github-actions-ci.herokuapp.com/health'
           checkstring: 'ok'
           delay: 5
+          rollbackonhealthcheckfailed: true
