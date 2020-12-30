@@ -37,3 +37,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: 'pokedex-github-actions-ci'
           heroku_email: 'laurilasonja@gmail.com'
+          healthcheck: 'https://pokedex-github-actions-ci.herokuapp.com/health'
+          checkstring: 'ok'
+          delay: 5
