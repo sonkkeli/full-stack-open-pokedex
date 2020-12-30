@@ -29,4 +29,9 @@ module.exports = {
   globals: {
     process: true,
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 }
