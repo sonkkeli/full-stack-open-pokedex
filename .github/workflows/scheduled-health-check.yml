@@ -12,6 +12,6 @@ jobs:
         uses: jtalk/url-health-check-action@2ff10af730f912a7b51f4e3868d9cb30de170a6b
         with:
           url: https://pokedex-github-actions-ci.herokuapp.com/health
-          follow-redirect: no
+          follow-redirect: no 
           max-attempts: 3
           retry-delay: 30s
