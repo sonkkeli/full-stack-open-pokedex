@@ -1,0 +1,17 @@
+name: Scheduled health check
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  health_check:
+  runs-on: ubuntu-18.04
+    steps:
+      - name: Check the app is still running
+        uses: jtalk/url-health-check-action@2ff10af730f912a7b51f4e3868d9cb30de170a6b
+        with:
+          url: https://pokedex-github-actions-ci.herokuapp.com/health
+          follow-redirect: no 
+          max-attempts: 3
+          retry-delay: 30s 
